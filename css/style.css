@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.banner h2{
+    font-size: 2em;
+    color: rgb(235, 11, 11);
+    font-weight: 500;
+    line-height: 1.em;
+
+}
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #2196f3;
+}
+/* .banner h3{
+    font-size: 1.5em;
+    color: rgb(235, 11, 11);
+    font-weight: 500;
+    line-height: 1.em;
+
+} */
+.btn{
+    position: relative;
+    background:rgb(9, 187, 241);
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    z-index:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+header.sticky{
+    background: white;
+    padding: 15px 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2 )
+}
+header .logo{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: black;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+header.sticky  ul li a{
+    color: black;
+}
+header ul li a :active{
+    color:rgb(27, 136, 238);
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color:black;
+
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.about::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: url(./back.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.75;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+ /* .contentbx{
+    padding-right: 40px;
+} */
+.contentbx h3{
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+.contentbx p{
+    font-weight: 600;
+}
+
+.services{
+    background: #ebf5fc;
+}
+.services .heading{
+    color: #02684d;
+    font-family: 'Lobster', cursive;
+}
+.heading.white{
+    color: white;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicebx{
+    padding: 40px 20px;
+    background: #ebf5fc;
+    /* color: #00AF80; */
+    color: #068664;
+    max-width: 340px;
+    border-radius: 40px;
+    margin: 20px;
+    text-align: center;
+    box-shadow:inset -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,.1) ;
+    transition: 0.5s;
+}
+
+.services .content .servicebx h2{
+    color: #068664;
+}
+.services .content .servicebx:hover{
+    box-shadow:inset -6px -6px 10px rgba(255,255,255,.5),inset 6px 6px 20px rgba(0,0,0,.05) ;
+} 
+
+.services .content .servicebx img{
+    max-width: 100px;
+    /* filter: invert(1); */
+}
+.services .content .servicebx h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:5px;
+    
+}
+.services .content .servicebx:hover img,
+.services .content .servicebx:hover h2,
+.services .content .servicebx:hover p{
+    transform: scale(0.98);
+}
+.work .content{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.work .content .workbx{
+    width: 50%;
+    padding: 20px;
+}
+.work .content .workbx img{
+    max-width: 100%;
+}
+.testimonials{
+    background: #f7f7f7;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonials .content .testimonialbx{
+    max-width : calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+.testimonials .content .testimonialbx p{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+.testimonials .content .testimonialbx h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: end;
+    line-height: 1em;
+}
+.testimonials .content .testimonialbx h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact{
+    background: #131419;
+}
+.contact h2{
+    letter-spacing: 2px;
+}
+.conatct .content{
+    align-content: space-around;
+}
+.contactinfo {
+   margin: 70px 40px;
+    color: white;
+}
+.contactinfo h3{
+    color: #2196f3;
+}
+.formbx{
+    position: relative;
+    width: 350px;
+    margin-right: 50px;
+    padding: 40px 40px 60px;
+    background: #131419;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -5px -5px 10px rgba(255,255,255,.05),
+                5px 5px 15px rgba(0,0,0,.5);
+}
+.formbx h3{
+    font-size: 1.5em;
+    color: #f7f7f7;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.formbx p{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size:x-small;
+    font-style: oblique;
+}
+.formbx .input{
+    text-align:left;
+    margin-top: 40px;
+}
+.formbx .input .inputbx{
+   margin-top: 20px; 
+}
+.formbx .input .inputbx label{
+    display: block;
+    color: #868686;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.formbx .input .inputbx input{
+    width: 100%;
+    height: 30px;
+    background: #131419;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 5px 15px;
+    color: rgb(10, 243, 243);
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,.15),
+                inset 2px 2px 6px rgba(0,0,0,.6);
+}
+.formbx .input .inputbx input[type="submit"]{
+    max-width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    box-shadow: -2px -2px 6px rgba(255,255,255,.1),
+             2px 2px 6px rgba(0,0,0,.8);
+}
+.formbx .input .inputbx input[type="submit"]:active{
+    margin-top: 20px;
+    box-shadow:inset -2px -2px 6px rgba(255,255,255,.1),
+            inset 2px 2px 6px rgba(0,0,0,.8);
+    color: rgb(30, 158, 233);         
+}

@@ -1,0 +1,123 @@
+@media(max-width:795px){
+    header,
+    header.sticky{
+        padding: 10px 50px 5px;
+        z-index: 2;
+    }
+    header ul li a{
+        color:black;
+        font-size: 25px;
+        margin: 10px;
+    }
+  
+    .menu{
+        position: fixed;
+        top: 54.8px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background:rgba(250, 250, 250, 0.5);
+        z-index: 1;
+        transition: 0.5s;
+        border-top: 1px solid rgba(1,1,1,.2);
+    }
+    .menu.active{
+        left: 0;
+    }
+    
+    
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(./menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url(./button.png);
+        /* background-position: centre; */
+        background-repeat: no-repeat;
+        background-size: 32px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section {
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        padding: 9px 15px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    
+    
+    }
+    .contentbx h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: small;
+    }
+   
+    
+    .testimonials .content{
+        flex-direction:row;
+        align-content: space-between;
+    }
+    .testimonials .content .testimonialbx{
+        /* max-width : calc(50% - 40px); */
+        padding: 10px 20px;
+        margin: 20px;
+        background: #2196f3;
+    }
+    .testimonials .content .testimonialbx p{
+        margin-top: 30px;
+        font-size: 12px;
+        font-weight: 300;
+        color: white;
+    }
+    .testimonials .content .testimonialbx h3{
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: end;
+        line-height: 1em;
+    }
+    .testimonials .content .testimonialbx h3 span{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .contactinfo {
+        margin: 40px 40px;
+         color: white;
+     }
+}
+ /* .services .content .servicebx{
+        margin: 10px;
+         padding: 19px 14px;
+    } */
+    /* .work .content .workbx {
+        width: 110%;
+        padding: 10px;
+    } */
